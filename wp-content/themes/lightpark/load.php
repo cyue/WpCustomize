@@ -3,7 +3,7 @@ function themepark_init_css() {
 if ( !is_admin()) {
 	
 	   wp_deregister_script('jquery');
-	   wp_register_script( 'jquery', "http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js", false);
+	   wp_register_script( 'jquery', "http://ajax.useso.com/ajax/libs/jquery/1.7.2/jquery.min.js", false);
 	   wp_enqueue_script('jquery');
 	    wp_deregister_script('easing');
 	   wp_register_script( 'easing',get_template_directory_uri() ."/js/jquery.easing.1.3.js");

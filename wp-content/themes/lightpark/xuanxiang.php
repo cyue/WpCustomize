@@ -91,7 +91,7 @@ function mytheme_page (){
 function mytheme_settings(){?>
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/upload.js"></script>  
 <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/xuanxiang.css" type="text/css" />
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.js"></script> 
+<script src="http://ajax.useso.com/ajax/libs/jquery/1.7/jquery.js"></script> 
 <script src="http://malsup.github.com/jquery.form.js"></script> 
     <script type="text/javascript">
         // wait for the DOM to be loaded 
