@@ -15,16 +15,16 @@
 
 // ** MySQL 设置 - 具体信息来自您正在使用的主机 ** //
 /** WordPress数据库的名称 */
-define('DB_NAME', 'wp');
+define('DB_NAME', 'www');
 
 /** MySQL数据库用户名 */
-define('DB_USER', 'wp');
+define('DB_USER', 'www');
 
 /** MySQL数据库密码 */
-define('DB_PASSWORD', 'wp');
+define('DB_PASSWORD', 'www');
 
 /** MySQL主机 */
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'sdny-mysql.cmbbiufnimrv.ap-southeast-2.rds.amazonaws.com');
 
 /** 创建数据表时默认的文字编码 */
 define('DB_CHARSET', 'utf8');
@@ -42,14 +42,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'yyt$epZq8KwOLfC#1y|>_!&spU<q#Vpbxt?@JM#tAzr[yI7U1`,I0uFTh=v|{X+Q');
-define('SECURE_AUTH_KEY',  'YEY,Q>N}z,HFl9Qi+1rdvRT2kv,;!**~H#XuZS#DLhxI--P,?0Vzr}eJx+F!WKL5');
-define('LOGGED_IN_KEY',    '|MxnE5Dio#I{aCnX+%1e~2]8`T;Ym=x6(a;&Zu:J|Y/dd<c.epW(T+g{PTAv#FBg');
-define('NONCE_KEY',        'zu[C|5-[uX+ADI[e%^=@0.GWIuHsqxH*+c;:;9sPX~(zNQ^4aG[b2dLy39Rg+X93');
-define('AUTH_SALT',        'RXx3c{08-S#gkR,<B/JPZ 1k;GrO9i|LLi+SBE q_|g|xALF:U6,/^ t7xtJmm`[');
-define('SECURE_AUTH_SALT', '[|E(d3u+UKShxN[q,@6478u/T?Zo96|S1NUM+/eh$~4z,c;NVGiH/E,H/>sW!|#_');
-define('LOGGED_IN_SALT',   'kek1v%tQRg%2Zol aytYEH!62]Z+AcB^lX^ QxQ-Kzgj]Ne#|)KfQyiPhYK_-Z8_');
-define('NONCE_SALT',       'RNRYU<Quxm!)I0WSx_ru5y[Hb3GHT7D;+z|OqAK&2f<$VnJVp{*aD[-tSRG;mcV_');
+define('AUTH_KEY',         'MSZ0m~`IUYBF9a+j|7Z.S&pxO?sm[/c?>,m{Y4%@IXPtTuLZ9Z=9b$gHYJ%!C3-$');
+define('SECURE_AUTH_KEY',  'L~~$N}vA}+qW6GPE.qE~I2MscG1._Yr.!!c0NdRr71!c!4?_/W2Zh<QECcq 6U8_');
+define('LOGGED_IN_KEY',    'I4bI]{*=+zjg-BVnK$gmgx{rKUy-p1M[B~^7D0X.vY9OKE2C|E/|6E+waN(V<8.c');
+define('NONCE_KEY',        'Y{8LpqS7C*Ab|M.KP%N@3uDvipoK{;?@Ya]XH]BPC~n2m8R+Co#?@{1S0t,Ea?-O');
+define('AUTH_SALT',        '3,_=V*aUE,5wsbJj~T*/c*z9A&zU(BqjZFw@n|l8 0=Z,YN[(e[?lq3xOrNUNSl^');
+define('SECURE_AUTH_SALT', 'wi59O6/<}T)RYoX2^-3Y|tgdEdFCbS5Zm2XAGpv@oPbJ5cuye6`nWYD<c!0EHk^[');
+define('LOGGED_IN_SALT',   '.(|G6_|~>!V(<ow.MY<w+EGfWYpgD&ydb>Sc<$#Eh?6HM6G-b2|@y4Iv#0){+tj%');
+define('NONCE_SALT',       '7b(h,!7hG&2inB#q/K*HXbOm~zTrUw1I~OzmSt6(C]_4r(M|X07Pr2 sT=YaMRj&');
 
 /**#@-*/
 
@@ -59,7 +59,7 @@ define('NONCE_SALT',       'RNRYU<Quxm!)I0WSx_ru5y[Hb3GHT7D;+z|OqAK&2f<$VnJVp{*a
  * 如果您有在同一数据库内安装多个WordPress的需求，请为每个WordPress设置
  * 不同的数据表前缀。前缀名只能为数字、字母加下划线。
  */
-$table_prefix  = 'wp_';
+$table_prefix  = 'wp';
 
 /**
  * WordPress语言设置，中文版本默认为中文。
@@ -93,6 +93,8 @@ define('WP_ZH_CN_ICP_NUM', true);
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/');
 
+/** 关闭自动更新*/
+define('AUTOMATIC_UPDATER_DISABLE', true);
+
 /** 设置WordPress变量和包含文件。 */
 require_once(ABSPATH . 'wp-settings.php');
-
