@@ -1,0 +1,11 @@
+/*
+Theme Name: mytheme
+Theme URI:
+THeme Description:
+*/
+
+@import url('http://cdn.bootcss.com/bootstrap/3.3.2/css/bootstrap.min.css');
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+}
